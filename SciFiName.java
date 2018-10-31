@@ -37,7 +37,7 @@ public class SciFiName
 
         // generate a sciFi name
    
-        String scifiname1 = firstName + lastName;
-        System.out.println(scifiname1);
+        
+        System.out.println();
     }
 }
