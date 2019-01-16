@@ -36,16 +36,26 @@ public class SciFiName
         String relativeName2 = UserInput.getString();
 
         // generate a sciFi name
-        // firstname
+        // scifi firstname
         firstName = firstName.substring(0, Math.min(firstName.length(), 3));
         lastName = lastName.substring(0, Math.min(lastName.length(), 2));
-        String fullFirstName = firstName + lastName;
-        System.out.println(fullFirstName);
+        String scifiFirstName = firstName + lastName;
+        System.out.println(scifiFirstName);
         
-        //lastname
+        //scifi lastname
         city = city.substring(0, Math.min(city.length(), 2));
         school = school.substring(0, Math.min(school.length(), 3));
-        String fullLastName = city + school;
-        System.out.println(fullLastName);
+        String scifiLastName = city + school;
+        System.out.println(scifiLastName);
+        
+        //random ##s
+        int relativeName1length = relativeName1.length();
+        int randInt1 = (int)(Math.random() * (relativeName1length) + 1);
+        
+        System.out.println("randInt1:" + randInt1);
+        String letter = relativeName1.substring(randInt1);
+        System.out.println(letter);
+        
+
     }
 }
