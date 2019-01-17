@@ -40,22 +40,31 @@ public class SciFiName
         firstName = firstName.substring(0, Math.min(firstName.length(), 3));
         lastName = lastName.substring(0, Math.min(lastName.length(), 2));
         String scifiFirstName = firstName + lastName;
-        System.out.println(scifiFirstName);
         
         //scifi lastname
         city = city.substring(0, Math.min(city.length(), 2));
         school = school.substring(0, Math.min(school.length(), 3));
         String scifiLastName = city + school;
-        System.out.println(scifiLastName);
         
         //random ##s
         int relativeName1length = relativeName1.length();
-        int randInt1 = (int)(Math.random() * (relativeName1length) + 1);
-        
+        System.out.println("relative Name 1" + relativeName1length);
+        int randInt1 = (int)(Math.random() * (relativeName1length));
         System.out.println("randInt1:" + randInt1);
         String letter = relativeName1.substring(randInt1);
-        System.out.println(letter);
+        System.out.println();
         
+        int relativeName2length = relativeName2.length();
+        System.out.println("relative Name 2 :" + relativeName2length);
+        int randInt2 = (int)(Math.random() * (relativeName2length));
+        System.out.println("randInt2:" + randInt1);
+        String letter2 = relativeName2.substring(randInt2);
+        System.out.println();
+        
+        //full name
+        System.out.println();
+        System.out.println("Hello " + scifiFirstName + " " + scifiLastName + " of " + letter + letter2 + ".");
+        System.out.println("Welcome!");
 
     }
 }
